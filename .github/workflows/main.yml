@@ -2,7 +2,7 @@ name: Sample workflow for Firebase Distribution action
 on: [push, pull_request, workflow_dispatch]
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: [ ec2, linux, medium ]
     steps:
       - name: Checkout
         uses: actions/checkout@master
